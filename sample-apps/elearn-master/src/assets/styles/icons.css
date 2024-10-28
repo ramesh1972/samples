@@ -1,0 +1,2124 @@
+[class^="hub-"], [class*=" hub-"] {  
+  font-family: 'font-icons' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/*Icons Names*/
+.hub-down-thin-chevron:before {
+  content: "\e900";
+}
+.hub-star:before {
+  content: "\e901";
+}
+.hub-star-half-filled:before {
+  content: "\e902";
+}
+.hub-star-filled:before {
+  content: "\e903";
+}
+.hub-heart:before {
+  content: "\e904";
+}
+.hub-location:before {
+  content: "\e905";
+}
+.hub-close:before {
+  content: "\e906";
+}
+.hub-filter:before {
+  content: "\e907";
+}
+.hub-left-arrow:before {
+  content: "\e908";
+}
+.hub-user:before {
+  content: "\e909";
+}
+.hub-list:before {
+  content: "\e90a";
+}
+.hub-bulb:before {
+  content: "\e90b";
+}
+.hub-mandap-decor:before {
+  content: "\e90c";
+}
+.hub-right-arrow:before {
+  content: "\e90d";
+}
+.hub-salon:before {
+  content: "\e90e";
+}
+.hub-bridal-wear:before {
+  content: "\e90f";
+}
+.hub-choreographer:before {
+  content: "\e910";
+}
+.hub-djs:before {
+  content: "\e911";
+}
+.hub-microphone:before {
+  content: "\e912";
+}
+.hub-event-organisers:before {
+  content: "\e913";
+}
+.hub-florists:before {
+  content: "\e914";
+}
+.hub-top-thin-chevron:before {
+  content: "\e915";
+}
+.hub-gift-shop:before {
+  content: "\e916";
+}
+.hub-hotel:before {
+  content: "\e917";
+}
+.hub-light-music:before {
+  content: "\e918";
+}
+.hub-time:before {
+  content: "\e919";
+}
+.hub-marriage-hall:before {
+  content: "\e91a";
+}
+.hub-Priest:before {
+  content: "\e91b";
+}
+.hub-resort:before {
+  content: "\e91c";
+}
+.hub-shamiana:before {
+  content: "\e91d";
+}
+.hub-vehicle:before {
+  content: "\e91e";
+}
+.hub-venue-decor:before {
+  content: "\e91f";
+}
+.hub-caterers:before {
+  content: "\e920";
+}
+.hub-balloon:before {
+  content: "\e921";
+}
+.hub-invitation:before {
+  content: "\e922";
+}
+.hub-photographers:before {
+  content: "\e923";
+}
+.hub-videographers:before {
+  content: "\e924";
+}
+.hub-Astrology:before {
+  content: "\e925";
+}
+.hub-left-thin-chevron:before {
+  content: "\e926";
+}
+.hub-right-thin-chevron:before {
+  content: "\e927";
+}
+.hub-heart-filled:before {
+  content: "\e928";
+}
+.hub-reply:before {
+  content: "\e929";
+}
+.hub-comment:before {
+  content: "\e92a";
+}
+.hub-eye:before {
+  content: "\e92b";
+}
+.hub-pinterest:before {
+  content: "\e92c";
+}
+.hub-fire-crackers-suppliers:before {
+  content: "\e92d";
+}
+.hub-google-plus:before {
+  content: "\e92e";
+}
+.hub-marriage-counseling:before {
+  content: "\e92f";
+}
+.hub-personal-loans-marriage-expenses:before {
+  content: "\e930";
+}
+.hub-matrimonial-services:before {
+  content: "\e931";
+}
+.hub-matrimonial-detective-agency:before {
+  content: "\e932";
+}
+.hub-facebook:before {
+  content: "\e933";
+}
+.hub-jewellery-shops:before {
+  content: "\e934";
+}
+.hub-linkedin:before {
+  content: "\e935";
+}
+.hub-honeymoon-tour-operators:before {
+  content: "\e936";
+}
+.hub-twitter:before {
+  content: "\e937";
+}
+.hub-horse-for-hire:before {
+  content: "\e938";
+}
+.hub-groom-makeup-services:before {
+  content: "\e939";
+}
+.hub-attach:before {
+  content: "\e93a";
+}
+.hub-ban:before {
+  content: "\e93b";
+}
+.hub-calender:before {
+  content: "\e93c";
+}
+.hub-chat:before {
+  content: "\e93d";
+}
+.hub-home-builders:before {
+  content: "\e93e";
+}
+.hub-lighting-stores:before {
+  content: "\e93f";
+}
+.hub-chev-double-r:before {
+  content: "\e940";
+}
+.hub-circle-question:before {
+  content: "\e941";
+}
+.hub-clipboard:before {
+  content: "\e942";
+}
+.hub-compress:before {
+  content: "\e943";
+}
+.hub-delete:before {
+  content: "\e944";
+}
+.hub-dot:before {
+  content: "\e945";
+}
+.hub-download:before {
+  content: "\e946";
+}
+.hub-edit:before {
+  content: "\e947";
+}
+.hub-exchange:before {
+  content: "\e948";
+}
+.hub-expand:before {
+  content: "\e949";
+}
+.hub-expand1:before {
+  content: "\e94a";
+}
+.hub-fit:before {
+  content: "\e94b";
+}
+.hub-globe:before {
+  content: "\e94c";
+}
+.hub-grid:before {
+  content: "\e94d";
+}
+.hub-happy:before {
+  content: "\e94e";
+}
+.hub-happy2:before {
+  content: "\e94f";
+}
+.hub-home:before {
+  content: "\e950";
+}
+.hub-info:before {
+  content: "\e951";
+}
+.hub-key:before {
+  content: "\e952";
+}
+.hub-like-hand:before {
+  content: "\e953";
+}
+.hub-link:before {
+  content: "\e954";
+}
+.hub-menu:before {
+  content: "\e955";
+}
+.hub-list-dot:before {
+  content: "\e956";
+}
+.hub-mail:before {
+  content: "\e957";
+}
+.hub-minus:before {
+  content: "\e958";
+}
+.hub-mobile:before {
+  content: "\e959";
+}
+.hub-move:before {
+  content: "\e95a";
+}
+.hub-notification:before {
+  content: "\e95b";
+}
+.hub-options:before {
+  content: "\e95c";
+}
+.hub-pdf:before {
+  content: "\e95d";
+}
+.hub-phone-receiver:before {
+  content: "\e95e";
+}
+.hub-plus:before {
+  content: "\e95f";
+}
+.hub-profits-linear:before {
+  content: "\e960";
+}
+.hub-recycle:before {
+  content: "\e961";
+}
+.hub-rotate-l:before {
+  content: "\e962";
+}
+.hub-rupee:before {
+  content: "\e963";
+}
+.hub-sad:before {
+  content: "\e964";
+}
+.hub-sad2:before {
+  content: "\e965";
+}
+.hub-search:before {
+  content: "\e966";
+}
+.hub-settings:before {
+  content: "\e967";
+}
+.hub-share:before {
+  content: "\e968";
+}
+.hub-short-list:before {
+  content: "\e969";
+}
+.hub-smile:before {
+  content: "\e96a";
+}
+.hub-smile2:before {
+  content: "\e96b";
+}
+.hub-sort-alpha-asc:before {
+  content: "\e96c";
+}
+.hub-sort-alpha-desc:before {
+  content: "\e96d";
+}
+.hub-structure:before {
+  content: "\e96e";
+}
+.hub-tick-l:before {
+  content: "\e96f";
+}
+.hub-residential-architects:before {
+  content: "\e970";
+}
+.hub-upload:before {
+  content: "\e971";
+}
+.hub-user2:before {
+  content: "\e972";
+}
+.hub-user-filled:before {
+  content: "\e973";
+}
+.hub-warning:before {
+  content: "\e974";
+}
+.hub-zoom:before {
+  content: "\e975";
+}
+.hub-bathroom-interior-designers-decorators:before {
+  content: "\e976";
+}
+.hub-bedding-dealers:before {
+  content: "\e977";
+}
+.hub-bed-linen-manufacturers:before {
+  content: "\e978";
+}
+.hub-bedroom-interior-designers-decorators:before {
+  content: "\e979";
+}
+.hub-carpet-dealers:before {
+  content: "\e97a";
+}
+.hub-commercial-architects:before {
+  content: "\e97b";
+}
+.hub-curtains-blinds-dealers:before {
+  content: "\e97c";
+}
+.hub-exterior-painting-contractors:before {
+  content: "\e97d";
+}
+.hub-flooring-contractors:before {
+  content: "\e97e";
+}
+.hub-furniture-dealers:before {
+  content: "\e97f";
+}
+.hub-interior-painting-contractors:before {
+  content: "\e980";
+}
+.hub-kitchen-interior-designers-decorators:before {
+  content: "\e981";
+}
+.hub-landscaping-contractors:before {
+  content: "\e982";
+}
+.hub-living-room-interior-designers-decorators:before {
+  content: "\e983";
+}
+.hub-modular-kitchen-dealers:before {
+  content: "\e984";
+}
+.hub-office-interior-designers:before {
+  content: "\e985";
+}
+.hub-plumbing-contractors:before {
+  content: "\e986";
+}
+.hub-residential-interior-designers:before {
+  content: "\e987";
+}
+.hub-roofing-ceiling-contractors:before {
+  content: "\e988";
+}
+.hub-swimming-pool-contractors:before {
+  content: "\e989";
+}
+.hub-vastu-consultants:before {
+  content: "\e98a";
+}
+.hub-waterproofing-contractors:before {
+  content: "\e98b";
+}
+.hub-discount-batch:before {
+  content: "\e98c";
+}
+.hub-dashboard:before {
+  content: "\e98d";
+}
+.hub-logout:before {
+  content: "\e98e";
+}
+.hub-about:before {
+  content: "\e98f";
+}
+.hub-shopping-label:before {
+  content: "\e990";
+}
+.hub-thumb-line:before {
+  content: "\e991";
+}
+.hub-search-line:before {
+  content: "\e992";
+}
+.hub-youtube-1:before {
+  content: "\e993";
+}
+.hub-instagram-1:before {
+  content: "\e994";
+}
+.hub-settings-filled:before {
+  content: "\e995";
+}
+.hub-dropdown:before {
+  content: "\e996";
+}
+.hub-facebook-1:before {
+  content: "\e997";
+}
+.hub-g-plus-1:before {
+  content: "\e998";
+}
+.hub-linkedin-1:before {
+  content: "\e999";
+}
+.hub-phone-filled:before {
+  content: "\e99a";
+}
+.hub-printrest-1:before {
+  content: "\e99b";
+}
+.hub-twitter-1:before {
+  content: "\e99c";
+}
+.hub-half-star-sharp:before {
+  content: "\e99d";
+}
+.hub-star-line-sharp:before {
+  content: "\e99e";
+}
+.hub-star-filled-sharp:before {
+  content: "\e99f";
+}
+.hub-gps-localization:before {
+  content: "\e9a0";
+}
+.hub-download-to-phone:before {
+  content: "\e9a1";
+}
+.hub-mail-filled:before {
+  content: "\e9a2";
+}
+.hub-whatsapp-icon-lined:before {
+  content: "\e9a3";
+}
+.hub-whatsapp-icon-filled:before {
+  content: "\e9a4";
+}
+.hub-form-verified:before {
+  content: "\e9a5";
+}
+.hub-form-filled:before {
+  content: "\e9a6";
+}
+.hub-getquotes:before {
+  content: "\e9a7";
+}
+.hub-get-quotes:before {
+  content: "\e9a8";
+}
+.hub-compare-quotes:before {
+  content: "\e9a9";
+}
+.hub-Press:before {
+  content: "\e9aa";
+}
+.hub-logout1:before {
+  content: "\e9ab";
+}
+.hub-dashboard1:before {
+  content: "\e9ac";
+}
+.hub-account-settings:before {
+  content: "\e9ad";
+}
+.hub-faq:before {
+  content: "\e9ae";
+}
+.hub-contact:before {
+  content: "\e9af";
+}
+.hub-advertise:before {
+  content: "\e9b0";
+}
+.hub-careers:before {
+  content: "\e9b1";
+}
+.hub-blog:before {
+  content: "\e9b2";
+}
+.hub-about1:before {
+  content: "\e9b3";
+}
+.hub-list-1:before {
+  content: "\e9b4";
+}
+.hub-calendar-1:before {
+  content: "\e9b5";
+}
+.hub-dashboard-1:before {
+  content: "\e9b6";
+}
+.hub-more-1:before {
+  content: "\e9b7";
+}
+.hub-tickets-1:before {
+  content: "\e9b8";
+}
+.hub-cheque:before {
+  content: "\e9b9";
+}
+.hub-cash:before {
+  content: "\e9ba";
+}
+.hub-card-payment:before {
+  content: "\e9bb";
+}
+.hub-bank:before {
+  content: "\e9bc";
+}
+.hub-painting-contractors:before {
+  content: "\e9bd";
+}
+.hub-plumbers:before {
+  content: "\e9be";
+}
+.hub-electrical-contractors:before {
+  content: "\e9bf";
+}
+.hub-security-system-dealers:before {
+  content: "\e9c0";
+}
+.hub-doors-and-windows-dealers:before {
+  content: "\e9c1";
+}
+.hub-home-automation-system-providers:before {
+  content: "\e9c2";
+}
+.hub-settings-f:before {
+  content: "\e9c3";
+}
+.hub-hand-f:before {
+  content: "\e9c4";
+}
+.hub-paste:before {
+  content: "\e9c5";
+}
+.hub-briefcase-f:before {
+  content: "\e9c6";
+}
+.hub-pointer:before {
+  content: "\e9c7";
+}
+.hub-briefcase-f-1:before {
+  content: "\e9c8";
+}
+.hub-bulleted-list:before {
+  content: "\e9c9";
+}
+.hub-bullet-f:before {
+  content: "\e9ca";
+}
+.hub-camera-f:before {
+  content: "\e9cb";
+}
+.hub-chat-f:before {
+  content: "\e9cc";
+}
+.hub-check:before {
+  content: "\e9cd";
+}
+.hub-chevron-down:before {
+  content: "\e9ce";
+}
+.hub-close-1:before {
+  content: "\e9cf";
+}
+.hub-connected-user-f:before {
+  content: "\e9d0";
+}
+.hub-delete-f:before {
+  content: "\e9d1";
+}
+.hub-edit-f:before {
+  content: "\e9d2";
+}
+.hub-empty-pic:before {
+  content: "\e9d3";
+}
+.hub-home-f:before {
+  content: "\e9d4";
+}
+.hub-mail-f:before {
+  content: "\e9d5";
+}
+.hub-mobile-panel-f:before {
+  content: "\e9d6";
+}
+.hub-more-menu:before {
+  content: "\e9d7";
+}
+.hub-more-notification:before {
+  content: "\e9d8";
+}
+.hub-multiline-chart:before {
+  content: "\e9d9";
+}
+.hub-receiver-f:before {
+  content: "\e9da";
+}
+.hub-referral-code:before {
+  content: "\e9db";
+}
+.hub-remove:before {
+  content: "\e9dc";
+}
+.hub-search-f:before {
+  content: "\e9dd";
+}
+.hub-short-arrow-right:before {
+  content: "\e9de";
+}
+.hub-star-circle:before {
+  content: "\e9df";
+}
+.hub-star-f:before {
+  content: "\e9e0";
+}
+.hub-talk-bubble-dots-f:before {
+  content: "\e9e1";
+}
+.hub-talk-bubble-lines-f:before {
+  content: "\e9e2";
+}
+.hub-triangle-down:before {
+  content: "\e9e3";
+}
+.hub-triangle-up:before {
+  content: "\e9e4";
+}
+.hub-upload-f:before {
+  content: "\e9e5";
+}
+.hub-user-box-f:before {
+  content: "\e9e6";
+}
+.hub-user-circle-f:before {
+  content: "\e9e7";
+}
+.hub-user-talk-bubble-f:before {
+  content: "\e9e8";
+}
+.hub-add:before {
+  content: "\e9e9";
+}
+.hub-bookmark-f:before {
+  content: "\e9ea";
+}
+.hub-sort:before {
+  content: "\e9eb";
+}
+.hub-more-option:before {
+  content: "\e9ec";
+}
+.hub-short-arrow-down:before {
+  content: "\e9ed";
+}
+.hub-short-arrow-up:before {
+  content: "\e9ee";
+}
+.hub-short-arrow-left:before {
+  content: "\e9ef";
+}
+.hub-tic-in-circle:before {
+  content: "\e9f0";
+}
+.hub-invoice:before {
+  content: "\e9f1";
+}
+.hub-mail-opened:before {
+  content: "\e9f2";
+}
+.hub-phone-missed:before {
+  content: "\e9f3";
+}
+.hub-phone-callback:before {
+  content: "\e9f4";
+}
+.hub-phone-call:before {
+  content: "\e9f5";
+}
+.hub-login:before {
+  content: "\e9f6";
+}
+.hub-debit-card:before {
+  content: "\e9f7";
+}
+.hub-mail2:before {
+  content: "\eadc";
+}
+.hub-abacus:before {
+  content: "\e9f8";
+}
+.hub-ac:before {
+  content: "\e9f9";
+}
+.hub-address-book:before {
+  content: "\e9fa";
+}
+.hub-agriculture:before {
+  content: "\e9fb";
+}
+.hub-alarm:before {
+  content: "\e9fc";
+}
+.hub-amphitheatre:before {
+  content: "\e9fd";
+}
+.hub-android:before {
+  content: "\e9fe";
+}
+.hub-apartment:before {
+  content: "\e9ff";
+}
+.hub-apartments:before {
+  content: "\ea00";
+}
+.hub-apartments2:before {
+  content: "\ea01";
+}
+.hub-atm:before {
+  content: "\ea02";
+}
+.hub-atm1:before {
+  content: "\ea03";
+}
+.hub-attachment:before {
+  content: "\ea04";
+}
+.hub-awards:before {
+  content: "\ea05";
+}
+.hub-bachelor:before {
+  content: "\ea06";
+}
+.hub-bachlor:before {
+  content: "\ea07";
+}
+.hub-bag:before {
+  content: "\ea08";
+}
+.hub-balcony:before {
+  content: "\ea09";
+}
+.hub-bangalore:before {
+  content: "\ea0a";
+}
+.hub-bank-l:before {
+  content: "\ea0b";
+}
+.hub-basketball:before {
+  content: "\ea0c";
+}
+.hub-basketball-court:before {
+  content: "\ea0d";
+}
+.hub-bathroom:before {
+  content: "\ea0e";
+}
+.hub-bathroom-tub:before {
+  content: "\ea0f";
+}
+.hub-beach-house:before {
+  content: "\ea10";
+}
+.hub-bead-mattress:before {
+  content: "\ea11";
+}
+.hub-bed-1:before {
+  content: "\ea12";
+}
+.hub-bed-2:before {
+  content: "\ea13";
+}
+.hub-bed-3:before {
+  content: "\ea14";
+}
+.hub-bed-4:before {
+  content: "\ea15";
+}
+.hub-bedroom:before {
+  content: "\ea16";
+}
+.hub-bed-room-1:before {
+  content: "\ea17";
+}
+.hub-bhk-1:before {
+  content: "\ea18";
+}
+.hub-bhk-2:before {
+  content: "\ea19";
+}
+.hub-bhk-3:before {
+  content: "\ea1a";
+}
+.hub-bhk-4:before {
+  content: "\ea1b";
+}
+.hub-bhk-4plus:before {
+  content: "\ea1c";
+}
+.hub-bike:before {
+  content: "\ea1d";
+}
+.hub-bike-c:before {
+  content: "\ea1e";
+}
+.hub-bike-parking:before {
+  content: "\ea1f";
+}
+.hub-book:before {
+  content: "\ea20";
+}
+.hub-books:before {
+  content: "\ea21";
+}
+.hub-bracing:before {
+  content: "\ea22";
+}
+.hub-break-fast:before {
+  content: "\ea23";
+}
+.hub-briefcase:before {
+  content: "\ea24";
+}
+.hub-building:before {
+  content: "\ea25";
+}
+.hub-building-with-big-windows:before {
+  content: "\ea26";
+}
+.hub-buy-cal:before {
+  content: "\ea27";
+}
+.hub-c-access:before {
+  content: "\ea28";
+}
+.hub-calc:before {
+  content: "\ea29";
+}
+.hub-calculator:before {
+  content: "\ea2a";
+}
+.hub-calendar:before {
+  content: "\ea2b";
+}
+.hub-camera:before {
+  content: "\ea2c";
+}
+.hub-car:before {
+  content: "\ea2d";
+}
+.hub-car-c:before {
+  content: "\ea2e";
+}
+.hub-car-v:before {
+  content: "\ea2f";
+}
+.hub-chair:before {
+  content: "\ea30";
+}
+.hub-check-price:before {
+  content: "\ea31";
+}
+.hub-chennai:before {
+  content: "\ea32";
+}
+.hub-club-house:before {
+  content: "\ea33";
+}
+.hub-club-house2:before {
+  content: "\ea34";
+}
+.hub-coffee:before {
+  content: "\ea35";
+}
+.hub-com-hall:before {
+  content: "\ea36";
+}
+.hub-commercial:before {
+  content: "\ea37";
+}
+.hub-commercial-land:before {
+  content: "\ea38";
+}
+.hub-community-hall:before {
+  content: "\ea39";
+}
+.hub-com-wall:before {
+  content: "\ea3a";
+}
+.hub-condominiums:before {
+  content: "\ea3b";
+}
+.hub-condominiums1:before {
+  content: "\ea3c";
+}
+.hub-connection:before {
+  content: "\ea3d";
+}
+.hub-corner-plot:before {
+  content: "\ea3e";
+}
+.hub-creche:before {
+  content: "\ea3f";
+}
+.hub-curtain-new:before {
+  content: "\ea40";
+}
+.hub-damper:before {
+  content: "\ea41";
+}
+.hub-dampers:before {
+  content: "\ea42";
+}
+.hub-daycare:before {
+  content: "\ea43";
+}
+.hub-delhi:before {
+  content: "\ea44";
+}
+.hub-dining-room:before {
+  content: "\ea45";
+}
+.hub-dinning-table-sofa:before {
+  content: "\ea46";
+}
+.hub-direction-facing:before {
+  content: "\ea47";
+}
+.hub-display:before {
+  content: "\ea48";
+}
+.hub-door:before {
+  content: "\ea49";
+}
+.hub-door2:before {
+  content: "\ea4a";
+}
+.hub-drainagesystem:before {
+  content: "\ea4b";
+}
+.hub-drainage-system:before {
+  content: "\ea4c";
+}
+.hub-duplex-house:before {
+  content: "\ea4d";
+}
+.hub-electricity:before {
+  content: "\ea4e";
+}
+.hub-engineer:before {
+  content: "\ea4f";
+}
+.hub-envelop:before {
+  content: "\ea50";
+}
+.hub-expand12:before {
+  content: "\ea51";
+}
+.hub-expand-arrow:before {
+  content: "\ea52";
+}
+.hub-family:before {
+  content: "\ea53";
+}
+.hub-fan:before {
+  content: "\ea54";
+}
+.hub-fan-new:before {
+  content: "\ea55";
+}
+.hub-farm-house:before {
+  content: "\ea56";
+}
+.hub-ferris-wheel:before {
+  content: "\ea57";
+}
+.hub-file-text:before {
+  content: "\ea58";
+}
+.hub-fire:before {
+  content: "\ea59";
+}
+.hub-fire2:before {
+  content: "\ea5a";
+}
+.hub-fire-hydrant:before {
+  content: "\ea5b";
+}
+.hub-fire-safety:before {
+  content: "\ea5c";
+}
+.hub-fit2:before {
+  content: "\ea5d";
+}
+.hub-flag:before {
+  content: "\ea5e";
+}
+.hub-floor-apartments:before {
+  content: "\ea5f";
+}
+.hub-floor-plan:before {
+  content: "\ea60";
+}
+.hub-floors:before {
+  content: "\ea61";
+}
+.hub-fridge:before {
+  content: "\ea62";
+}
+.hub-furniture:before {
+  content: "\ea63";
+}
+.hub-gallery:before {
+  content: "\ea64";
+}
+.hub-garbage-disposal:before {
+  content: "\ea65";
+}
+.hub-garden:before {
+  content: "\ea66";
+}
+.hub-gas-stove:before {
+  content: "\ea67";
+}
+.hub-gated-com:before {
+  content: "\ea68";
+}
+.hub-gated-com1:before {
+  content: "\ea69";
+}
+.hub-geysers:before {
+  content: "\ea6a";
+}
+.hub-gift:before {
+  content: "\ea6b";
+}
+.hub-graph:before {
+  content: "\ea6c";
+}
+.hub-gym:before {
+  content: "\ea6d";
+}
+.hub-hair-dryer:before {
+  content: "\ea6e";
+}
+.hub-handover:before {
+  content: "\ea6f";
+}
+.hub-high-rise-apartments:before {
+  content: "\ea70";
+}
+.hub-home-loan-cal:before {
+  content: "\ea71";
+}
+.hub-house:before {
+  content: "\ea72";
+}
+.hub-house-1:before {
+  content: "\ea73";
+}
+.hub-house-f:before {
+  content: "\ea74";
+}
+.hub-house-keeping:before {
+  content: "\ea75";
+}
+.hub-house-Keeping-service:before {
+  content: "\ea76";
+}
+.hub-hyderabad:before {
+  content: "\ea77";
+}
+.hub-idea:before {
+  content: "\ea78";
+}
+.hub-indipendent-house:before {
+  content: "\ea79";
+}
+.hub-indoor-games:before {
+  content: "\ea7a";
+}
+.hub-industrial-estate:before {
+  content: "\ea7b";
+}
+.hub-industrial-land:before {
+  content: "\ea7c";
+}
+.hub-in-games:before {
+  content: "\ea7d";
+}
+.hub-in-provision:before {
+  content: "\ea7e";
+}
+.hub-intercom:before {
+  content: "\ea7f";
+}
+.hub-ironing:before {
+  content: "\ea80";
+}
+.hub-jacuzzi:before {
+  content: "\ea81";
+}
+.hub-key-project-possession:before {
+  content: "\ea82";
+}
+.hub-kids-play:before {
+  content: "\ea83";
+}
+.hub-laptop:before {
+  content: "\ea84";
+}
+.hub-laundering:before {
+  content: "\ea85";
+}
+.hub-laundry:before {
+  content: "\ea86";
+}
+.hub-library:before {
+  content: "\ea87";
+}
+.hub-library2:before {
+  content: "\ea88";
+}
+.hub-lift:before {
+  content: "\ea89";
+}
+.hub-lift2:before {
+  content: "\ea8a";
+}
+.hub-light:before {
+  content: "\ea8b";
+}
+.hub-living-room:before {
+  content: "\ea8c";
+}
+.hub-lobby-area:before {
+  content: "\ea8d";
+}
+.hub-location-linear:before {
+  content: "\ea8e";
+}
+.hub-locker:before {
+  content: "\ea8f";
+}
+.hub-map:before {
+  content: "\ea90";
+}
+.hub-medical-serv:before {
+  content: "\ea91";
+}
+.hub-medical-serv1:before {
+  content: "\ea92";
+}
+.hub-microven:before {
+  content: "\ea93";
+}
+.hub-mobile2:before {
+  content: "\ea94";
+}
+.hub-mod-kitchen:before {
+  content: "\ea95";
+}
+.hub-modular-kitchen:before {
+  content: "\ea96";
+}
+.hub-money:before {
+  content: "\ea97";
+}
+.hub-money1:before {
+  content: "\ea98";
+}
+.hub-money2:before {
+  content: "\ea99";
+}
+.hub-move2:before {
+  content: "\ea9a";
+}
+.hub-mumbai:before {
+  content: "\ea9b";
+}
+.hub-new-car-parking:before {
+  content: "\ea9c";
+}
+.hub-news:before {
+  content: "\ea9d";
+}
+.hub-news-paper:before {
+  content: "\ea9e";
+}
+.hub-non-veg:before {
+  content: "\ea9f";
+}
+.hub-no-smoking:before {
+  content: "\eaa0";
+}
+.hub-office-in-it-park:before {
+  content: "\eaa1";
+}
+.hub-office-space:before {
+  content: "\eaa2";
+}
+.hub-open-air-theatre:before {
+  content: "\eaa3";
+}
+.hub-over-tank:before {
+  content: "\eaa4";
+}
+.hub-over-tank2:before {
+  content: "\eaa5";
+}
+.hub-paint:before {
+  content: "\eaa6";
+}
+.hub-paper:before {
+  content: "\eaa7";
+}
+.hub-park:before {
+  content: "\eaa8";
+}
+.hub-party-hall:before {
+  content: "\eaa9";
+}
+.hub-pass:before {
+  content: "\eaaa";
+}
+.hub-patio:before {
+  content: "\eaab";
+}
+.hub-pent-house:before {
+  content: "\eaac";
+}
+.hub-percentage:before {
+  content: "\eaad";
+}
+.hub-pharmacy:before {
+  content: "\eaae";
+}
+.hub-phone:before {
+  content: "\eaaf";
+}
+.hub-phone2:before {
+  content: "\eab0";
+}
+.hub-phone-hang-up:before {
+  content: "\eab1";
+}
+.hub-pipped-gas:before {
+  content: "\eab2";
+}
+.hub-planned-avenue:before {
+  content: "\eab3";
+}
+.hub-play-ground:before {
+  content: "\eab4";
+}
+.hub-plot-lands:before {
+  content: "\eab5";
+}
+.hub-plots:before {
+  content: "\eab6";
+}
+.hub-plots-l:before {
+  content: "\eab7";
+}
+.hub-point-down:before {
+  content: "\eab8";
+}
+.hub-point-left:before {
+  content: "\eab9";
+}
+.hub-point-right:before {
+  content: "\eaba";
+}
+.hub-point-up:before {
+  content: "\eabb";
+}
+.hub-pooja-room:before {
+  content: "\eabc";
+}
+.hub-power:before {
+  content: "\eabd";
+}
+.hub-power-backup:before {
+  content: "\eabe";
+}
+.hub-price-list:before {
+  content: "\eabf";
+}
+.hub-profile:before {
+  content: "\eac0";
+}
+.hub-profits-f:before {
+  content: "\eac1";
+}
+.hub-project-start:before {
+  content: "\eac2";
+}
+.hub-pune:before {
+  content: "\eac3";
+}
+.hub-recycle-water:before {
+  content: "\eac4";
+}
+.hub-reinforced-concrete-bands:before {
+  content: "\eac5";
+}
+.hub-rent:before {
+  content: "\eac6";
+}
+.hub-residential:before {
+  content: "\eac7";
+}
+.hub-residential2:before {
+  content: "\eac8";
+}
+.hub-residential-plots:before {
+  content: "\eac9";
+}
+.hub-room-service:before {
+  content: "\eaca";
+}
+.hub-rotate-r:before {
+  content: "\eacb";
+}
+.hub-rowhouse:before {
+  content: "\eacc";
+}
+.hub-row-house:before {
+  content: "\eacd";
+}
+.hub-row-house2:before {
+  content: "\eace";
+}
+.hub-rwater-har:before {
+  content: "\eacf";
+}
+.hub-sand-bucket:before {
+  content: "\ead0";
+}
+.hub-sauna:before {
+  content: "\ead1";
+}
+.hub-save:before {
+  content: "\ead2";
+}
+.hub-s-citizen:before {
+  content: "\ead3";
+}
+.hub-search2:before {
+  content: "\ead4";
+}
+.hub-security:before {
+  content: "\ead5";
+}
+.hub-servant-room:before {
+  content: "\ead6";
+}
+.hub-sez-warhouse:before {
+  content: "\ead7";
+}
+.hub-shelves:before {
+  content: "\ead8";
+}
+.hub-shelves-wardrobes:before {
+  content: "\ead9";
+}
+.hub-shield:before {
+  content: "\eada";
+}
+.hub-shop-showroom:before {
+  content: "\eadb";
+}
+.hub-shuttlecock:before {
+  content: "\eadd";
+}
+.hub-site-map:before {
+  content: "\eade";
+}
+.hub-skating:before {
+  content: "\eadf";
+}
+.hub-smoking:before {
+  content: "\eae0";
+}
+.hub-sofa:before {
+  content: "\eae1";
+}
+.hub-solar-power:before {
+  content: "\eae2";
+}
+.hub-solar-system:before {
+  content: "\eae3";
+}
+.hub-spa:before {
+  content: "\eae4";
+}
+.hub-sprinkler:before {
+  content: "\eae5";
+}
+.hub-sqft:before {
+  content: "\eae6";
+}
+.hub-s-treatment:before {
+  content: "\eae7";
+}
+.hub-studio-apartment:before {
+  content: "\eae8";
+}
+.hub-study-room:before {
+  content: "\eae9";
+}
+.hub-super-market:before {
+  content: "\eaea";
+}
+.hub-super-market1:before {
+  content: "\eaeb";
+}
+.hub-surveilance:before {
+  content: "\eaec";
+}
+.hub-swim-pool:before {
+  content: "\eaed";
+}
+.hub-tablet:before {
+  content: "\eaee";
+}
+.hub-table-tennis:before {
+  content: "\eaef";
+}
+.hub-tar-road:before {
+  content: "\eaf0";
+}
+.hub-technology:before {
+  content: "\eaf1";
+}
+.hub-tennis:before {
+  content: "\eaf2";
+}
+.hub-terrace:before {
+  content: "\eaf3";
+}
+.hub-theater:before {
+  content: "\eaf4";
+}
+.hub-theater2:before {
+  content: "\eaf5";
+}
+.hub-tiles:before {
+  content: "\eaf6";
+}
+.hub-travel:before {
+  content: "\eaf7";
+}
+.hub-tubelight:before {
+  content: "\eaf8";
+}
+.hub-tube-lite:before {
+  content: "\eaf9";
+}
+.hub-tumblr:before {
+  content: "\eafa";
+}
+.hub-tv:before {
+  content: "\eafb";
+}
+.hub-vastu:before {
+  content: "\eafc";
+}
+.hub-veg:before {
+  content: "\eafd";
+}
+.hub-villa:before {
+  content: "\eafe";
+}
+.hub-villa2:before {
+  content: "\eaff";
+}
+.hub-villa3:before {
+  content: "\eb00";
+}
+.hub-visit:before {
+  content: "\eb01";
+}
+.hub-visitor-car-parking:before {
+  content: "\eb02";
+}
+.hub-volley-ball:before {
+  content: "\eb03";
+}
+.hub-vollyball-cort:before {
+  content: "\eb04";
+}
+.hub-walking-track:before {
+  content: "\eb05";
+}
+.hub-wardrobe:before {
+  content: "\eb06";
+}
+.hub-warning2:before {
+  content: "\eb07";
+}
+.hub-wash-machine:before {
+  content: "\eb08";
+}
+.hub-water:before {
+  content: "\eb09";
+}
+.hub-water-treat:before {
+  content: "\eb0a";
+}
+.hub-wifi:before {
+  content: "\eb0b";
+}
+.hub-wood-work:before {
+  content: "\eb0c";
+}
+.hub-yoga:before {
+  content: "\eb0d";
+}
+.hub-zoom-in:before {
+  content: "\eb0e";
+}
+.hub-zoom-out:before {
+  content: "\eb0f";
+}
+.hub-zoom-thin:before {
+  content: "\eb10";
+}
+
+.hub-gym-mini:before {
+  content: "\eb11";
+}
+.hub-swimming-mini:before {
+  content: "\eb12";
+}
+.hub-build-business:before {
+  content: "\eb13";
+}
+.hub-business-chart:before {
+  content: "\eb14";
+}
+.hub-join-business:before {
+  content: "\eb15";
+}
+.hub-listed-service:before {
+  content: "\eb16";
+}
+.hub-new-customers:before {
+  content: "\eb17";
+}
+.hub-quick-respond:before {
+  content: "\eb18";
+}
+.hub-verified-service:before {
+  content: "\eb19";
+}
+.hub-attempted:before {
+  content: "\eb1a";
+}
+.hub-connected-hands:before {
+  content: "\eb1b";
+}
+.hub-fast-filling:before {
+  content: "\eb1c";
+}
+.hub-gift-filled:before {
+  content: "\eb1d";
+}
+.hub-hot:before {
+  content: "\eb1e";
+}
+.hub-medal-filled:before {
+  content: "\eb1f";
+}
+.hub-ribbon-badge-filled:before {
+  content: "\eb20";
+}
+.hub-voice-f:before {
+  content: "\eb21";
+}
+.hub-play-circle-f:before {
+  content: "\eb22";
+}
+.hub-send-f:before {
+  content: "\eb23";
+}
+.hub-diamond:before {
+  content: "\eb24";
+}
+.hub-earth-globe:before {
+  content: "\eb25";
+}
+.hub-compare:before {
+  content: "\eb26";
+}
+.hub-shipped:before {
+  content: "\eb27";
+}
+.hub-debit-card-l:before {
+  content: "\eb28";
+}
+.hub-delivery-truck:before {
+  content: "\eb29";
+}
+.hub-file:before {
+  content: "\eb2a";
+}
+.hub-online-view:before {
+  content: "\eb2b";
+}
+.hub-b-mobile:before {
+  content: "\eb2c";
+}
+.hub-b-location:before {
+  content: "\eb2d";
+}
+.hub-b-name:before {
+  content: "\eb2e";
+}
+.hub-b-user:before {
+  content: "\eb2f";
+}
+.hub-b-service:before {
+  content: "\eb30";
+}
+.hub-transport2:before {
+  content: "\eb31";
+}
+.hub-location-swap-icon:before {
+  content: "\eb32";
+}
+.hub-transport1:before {
+  content: "\eb33";
+}
+.hub-error-f:before {
+  content: "\eb34";
+}
+
+/*27 June 2019*/
+.hub-layers-f:before {
+  content: "\eb35";
+}
+.hub-logo-f:before {
+  content: "\eb36";
+}
+.hub-user-f:before {
+  content: "\eb37";
+}
+.hub-wallet-f:before {
+  content: "\eb38";
+}
+
+
+/*18 July 2019*/
+.hub-timeout-alert:before {
+  content: "\eb39";
+}
+.hub-sort-arrows:before {
+  content: "\eb3a";
+}
+.hub-filter-settings:before {
+  content: "\eb3b";
+}
+.hub-tags:before {
+  content: "\eb3c";
+}
+.hub-timer:before {
+  content: "\eb3d";
+}
+.hub-logo-linear:before {
+  content: "\eb3e";
+}
+.hub-Notification-f:before {
+  content: "\eb3f";
+}
+.hub-Notification-off-f:before {
+  content: "\eb40";
+}
+.hub-chat-box:before {
+  content: "\eb41";
+}
+
+
+/*26 July 2019*/
+.hub-trophy-f:before {
+  content: "\eb42";
+}
+.hub-high-rise-apartments-l:before {
+  content: "\eb43";
+}
+
+/*01 Aug 2019*/
+.hub-mic:before {
+  content: "\eb44";
+}
+.hub-terms-f:before {
+  content: "\eb45";
+}
+
+
+/*13 Aug 2019*/
+.hub-children-f:before {
+  content: "\eb46";
+}
+.hub-clock-f:before {
+  content: "\eb47";
+}
+.hub-human-head-f:before {
+  content: "\eb48";
+}
+.hub-test-tube-f:before {
+  content: "\eb49";
+}
+.hub-umbrella-f:before {
+  content: "\eb4a";
+}
+.hub-warranty-f:before {
+  content: "\eb4b";
+}
+
+
+/*31 October 2019*/
+.hub-quotes:before {
+  content: "\eb4c";
+}
+.hub-truck-shield:before {
+  content: "\eb4d";
+}
+.hub-user-group:before {
+  content: "\eb4e";
+}
+.hub-zero-percent-badge:before {
+  content: "\eb4f";
+}
+.hub-wallet-pop-f:before {
+  content: "\eb50";
+}
+.hub-customer-support-f:before {
+  content: "\eb51";
+}
+.hub-holding-money-f:before {
+  content: "\eb52";
+}
+.hub-feature:before {
+  content: "\eb53";
+}
+.hub-paint-roller:before {
+  content: "\eb54";
+}
+.hub-speed:before {
+  content: "\eb55";
+}
+.hub-Wedding-Ring:before {
+  content: "\eb56";
+}
+.hub-Tour-Operator:before {
+  content: "\eb57";
+}
+.hub-Lawyer:before {
+  content: "\eb58";
+}
+.hub-Job-Training:before {
+  content: "\eb59";
+}
+.hub-Exam-Coaching:before {
+  content: "\eb5a";
+}
+.hub-notification-1:before {
+  content: "\eb63";
+}
+.hub-web-f:before {
+  content: "\eb64";
+}
+.hub-get-quotes-1:before {
+  content: "\eb65";
+}
+.hub-bangalore-m:before {
+  content: "\eb66";
+}
+.hub-chennai-2:before {
+  content: "\eb67";
+}
+.hub-chennai-m:before {
+  content: "\eb68";
+}
+.hub-delhi-m:before {
+  content: "\eb69";
+}
+.hub-gurgaon-m:before {
+  content: "\eb6a";
+}
+.hub-hydreabad-m:before {
+  content: "\eb6b";
+}
+.hub-kolkata-m:before {
+  content: "\eb6c";
+}
+.hub-mumbai-m:before {
+  content: "\eb6d";
+}
+.hub-noida-m:before {
+  content: "\eb6e";
+}
+.hub-pune-m:before {
+  content: "\eb6f";
+}
+.hub-offer-batch:before {
+  content: "\eb5b";
+}
+.hub-list-dot-1:before {
+  content: "\eb5c";
+}
+.hub-ringer-f:before {
+  content: "\eb5d";
+}
+.hub-plots-land:before {
+  content: "\eb5e";
+}
+.hub-rent-prop:before {
+  content: "\eb5f";
+}
+.hub-roommates:before {
+  content: "\eb60";
+}
+.hub-sell-prop:before {
+  content: "\eb61";
+}
+.hub-residential-prop:before {
+  content: "\eb62";
+}
+.hub-notification-1:before {
+  content: "\eb63";
+}
+.hub-web-f:before {
+  content: "\eb64";
+}
+.hub-get-quotes-1:before {
+  content: "\eb65";
+}
+.hub-bangalore-m:before {
+  content: "\eb66";
+}
+.hub-chennai-2:before {
+  content: "\eb67";
+}
+.hub-chennai-m:before {
+  content: "\eb68";
+}
+.hub-delhi-m:before {
+  content: "\eb69";
+}
+.hub-gurgaon-m:before {
+  content: "\eb6a";
+}
+.hub-hydreabad-m:before {
+  content: "\eb6b";
+}
+.hub-kolkata-m:before {
+  content: "\eb6c";
+}
+.hub-mumbai-m:before {
+  content: "\eb6d";
+}
+.hub-noida-m:before {
+  content: "\eb6e";
+}
+.hub-pune-m:before {
+  content: "\eb6f";
+}
+.hub-residential-prop-2:before {
+  content: "\eb70";
+}
+.hub-commercial-prop:before {
+  content: "\eb71";
+}
+.hub-commercial-prop-2:before {
+  content: "\eb72";
+}
+.hub-achievement:before {
+  content: "\eb73";
+}
+.hub-courses:before {
+  content: "\eb74";
+}
+.hub-student:before {
+  content: "\eb75";
+}
+.hub-course-f:before {
+  content: "\eb76";
+}
+.hub-attach-slant:before {
+  content: "\eb77";
+}
+.hub-course-material:before {
+  content: "\eb78";
+}
+.hub-triangle-right:before {
+  content: "\eb79";
+}
+.hub-location-1:before {
+  content: "\eb7a";
+}
+.hub-flash:before {
+  content: "\eb7b";
+}
+.hub-history-dotted:before {
+  content: "\eb7c";
+}
+.hub-tic-circle:before {
+  content: "\eb7d";
+}
+.hub-speech-bubble:before {
+  content: "\eb7e";
+}
+.hub-send-message:before {
+  content: "\eb7f";
+}
+.hub-photo:before {
+  content: "\eb80";
+}
+.hub-add-photo:before {
+  content: "\eb81";
+}
+.hub-phone-l:before {
+  content: "\eb82";
+}
+.hub-create-l:before {
+  content: "\eb83";
+}
+.hub-id-proof:before {
+  content: "\eb84";
+}
+.hub-on-time:before {
+  content: "\eb85";
+}
+.hub-service-quality:before {
+  content: "\eb86";
+}
+.hub-right-long-arrow:before {
+  content: "\eb87";
+}
+.hub-share-l:before {
+  content: "\eb88";
+}
+.hub-not-interested:before {
+  content: "\eb89";
+}
+.hub-person-search:before {
+  content: "\eb8a";
+}
+.hub-person-add-disabled:before {
+  content: "\eb8b";
+}
+.hub-working-hours:before {
+  content: "\eb8c";
+}
+.hub-web-link:before {
+  content: "\eb8d";
+}
+.hub-video-l:before {
+  content: "\eb8e";
+}
+.hub-phone-disabled:before {
+  content: "\eb8f";
+}
+.hub-arrow-up-alt:before {
+  content: "\eb90";
+}
+.hub-mic-cb:before {
+  content: "\eb91";
+}
+.hub-call-made:before {
+  content: "\eb92";
+}
+.hub-thumb-down:before {
+  content: "\eb93";
+}
+.hub-thumb-up:before {
+  content: "\eb94";
+}
+.hub-thumbs-up-down:before {
+  content: "\eb95";
+}
+.hub-send-cb:before {
+  content: "\eb96";
+}
+.hub-open-cam:before {
+  content: "\eb97";
+}
+.hub-location-pin:before {
+  content: "\eb98";
+}
+.hub-image-upload:before {
+  content: "\eb99";
+}
+.hub-double-up:before {
+  content: "\eb9a";
+}
+.hub-document:before {
+  content: "\eb9b";
+}
+.hub-chat-bot-1:before {
+  content: "\eb9c";
+}
+.hub-attach-v:before {
+  content: "\eb9d";
+}
+.hub-done-all:before {
+  content: "\eb9e";
+}
+.hub-user-calendar:before {
+  content: "\eb9f";
+}
+.hub-edit-note:before {
+  content: "\eba0";
+}
+.hub-post-new:before {
+  content: "\eba1";
+}
+.hub-hand-shake:before {
+  content: "\eba2";
+}
+.hub-dashboard-sp:before {
+  content: "\eba3";
+}
+.hub-calendar-sp:before {
+  content: "\eba4";
+}
+.hub-gifts-sp:before {
+  content: "\eba5";
+}
+.hub-wallet:before {
+  content: "\eba6";
+}
+.hub-sad-sp:before {
+  content: "\eba7";
+}
+.hub-like-spark:before {
+  content: "\eba8";
+}
+.hub-chat-doted:before {
+  content: "\eba9";
+}
+.hub-call-receiver:before {
+  content: "\ebaa";
+}
+.hub-calendar-1-sp:before {
+  content: "\ebab";
+}
+.hub-message:before {
+  content: "\ebac";
+}
