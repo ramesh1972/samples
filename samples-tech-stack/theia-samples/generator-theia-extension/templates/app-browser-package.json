@@ -1,0 +1,31 @@
+{
+  "private": true,
+  "name": "<%= appMode %>-app",
+  "version": "<%= params.version %>",
+  "dependencies": {
+    "@theia/core": "<%= params.theiaVersion %>",
+    "@theia/editor": "<%= params.theiaVersion %>",
+    "@theia/filesystem": "<%= params.theiaVersion %>",
+    "@theia/markers": "<%= params.theiaVersion %>",
+    "@theia/messages": "<%= params.theiaVersion %>",
+    "@theia/monaco": "<%= params.theiaVersion %>",
+    "@theia/navigator": "<%= params.theiaVersion %>",
+    "@theia/preferences": "<%= params.theiaVersion %>",
+    "@theia/process": "<%= params.theiaVersion %>",
+    "@theia/terminal": "<%= params.theiaVersion %>",
+    "@theia/workspace": "<%= params.theiaVersion %>",
+    "<%= params.extensionName %>": "<%= params.version %>"
+  },
+  "devDependencies": {
+    "@theia/cli": "<%= params.theiaVersion %>"<% if (params.browserDevDependencies) { %><%- params.browserDevDependencies %><% } %>
+  },
+  "scripts": {
+    "bundle": "yarn rebuild && theia build --mode development",
+    "rebuild": "theia rebuild:browser",
+    "start": "theia start",
+    "watch": "yarn rebuild && theia build --watch --mode development"
+  },
+  "theia": {
+    "target": "<%= appMode %>"
+  }
+}

@@ -1,0 +1,35 @@
+apply plugin: 'com.android.application'
+
+android {
+    defaultConfig {
+        applicationId "com.wexflow"
+        minSdkVersion 23
+        targetSdkVersion 33
+        compileSdk 33
+        versionCode 1
+        versionName "7.4"
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    namespace 'com.wexflow'
+    lint {
+        abortOnError false
+        checkReleaseBuilds false
+    }
+}
+
+dependencies {
+    implementation 'com.google.android.material:material:1.9.0'
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    api 'androidx.appcompat:appcompat:1.6.1'
+    testImplementation 'junit:junit:4.12'
+    implementation 'androidx.preference:preference:1.2.0'
+}

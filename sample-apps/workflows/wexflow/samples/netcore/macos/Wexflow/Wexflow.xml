@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Wexflow>
+  <Setting name="workflowsFolder" value="/Applications/wexflow/Wexflow/Workflows" />
+  <Setting name="recordsFolder" value="/Applications/wexflow/Wexflow/Records" />
+  <Setting name="recordsHotFolder" value="/Applications/wexflow/Wexflow/Records/_HotFolder" />
+  <Setting name="tempFolder" value="/Applications/wexflow/Wexflow/Temp" />
+  <Setting name="tasksFolder" value="/Applications/wexflow/Wexflow/Tasks" />
+  <Setting name="approvalFolder" value="/Applications/wexflow/Wexflow/Approval" />
+  <Setting name="xsd" value="/Applications/wexflow/Wexflow/Workflow.xsd" />
+  <Setting name="tasksNamesFile" value="/Applications/wexflow/Wexflow/TasksNames.json" />
+  <Setting name="tasksSettingsFile" value="/Applications/wexflow/Wexflow/TasksSettings.json" />
+  <Setting name="globalVariablesFile" value="/Applications/wexflow/Wexflow/GlobalVariables.xml" />
+  <!-- SQLite or MongoDB or SQLServer or PostgreSQL or MySQL or LiteDB -->
+  <Setting name="dbType" value="SQLite" />
+  <!-- SQLite -->
+  <Setting name="connectionString" value="Data Source=/Applications/wexflow/Wexflow/Database/Wexflow.sqlite;Version=3;" />
+  <!-- MongoDB -->
+  <!--<Setting name="connectionString" value="Database=wexflow_netcore;MongoUrl=mongodb://localhost:27017;EnabledSslProtocols=false;SslProtocols=None" />-->
+  <!-- SQLServer -->
+  <!--<Setting name="connectionString" value="Server=localhost;Trusted_Connection=True;Database=wexflow_netcore;" />-->
+  <!-- PostgreSQL -->
+  <!--<Setting name="connectionString" value="Server=127.0.0.1;User Id=postgres;Password=000000;Database=wexflow_netcore;Port=5432" />-->
+  <!-- MySQL -->
+  <!--<Setting name="connectionString" value="Server=localhost;Database=wexflow_netcore;Uid=000000;Pwd=pwd;Port=3306" />-->
+  <!-- LiteDB -->
+  <!--<Setting name="connectionString" value="Filename=/Applications/wexflow/Wexflow/Database/Wexflow.db; Connection=direct" />-->
+</Wexflow>

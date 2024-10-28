@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="openai-java/api/src/main/java"/>
+	<classpathentry kind="src" path="openai-java/api/src/test/java"/>
+	<classpathentry kind="src" path="openai-java/client/src/main/java"/>
+	<classpathentry kind="src" path="openai-java/example/src/main/java"/>
+	<classpathentry kind="src" path="openai-java/service/src/main/java"/>
+	<classpathentry kind="src" path="openai-java/service/src/test/java"/>
+	<classpathentry kind="lib" path="openai-java/gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry kind="lib" path="D:/src/java_samples/openai/openai-java/example/lib/adapter-rxjava2-2.9.0.jar"/>
+	<classpathentry kind="lib" path="D:/src/java_samples/openai/openai-java/example/lib/api-0.18.2.jar"/>
+	<classpathentry kind="lib" path="D:/src/java_samples/openai/openai-java/example/lib/classgraph-4.8.21.jar"/>
+	<classpathentry kind="lib" path="D:/src/java_samples/openai/openai-java/example/lib/client-0.18.2.jar"/>
+	<classpathentry kind="lib" path="D:/src/java_samples/openai/openai-java/example/lib/converter-jackson-2.9.0.jar"/>
+	<classpathentry kind="lib" path="D:/src/java_samples/openai/openai-java/example/lib/jackson-annotations-2.14.2.jar"/>
+	<classpathentry kind="lib" path="D:/src/java_samples/openai/openai-java/example/lib/jackson-core-2.14.2.jar"/>
+	<classpathentry kind="lib" path="D:/src/java_samples/openai/openai-java/example/lib/jackson-databind-2.14.2.jar"/>
+	<classpathentry kind="lib" path="D:/src/java_samples/openai/openai-java/example/lib/jtokkit-0.5.1.jar"/>
+	<classpathentry kind="lib" path="D:/src/java_samples/openai/openai-java/example/lib/mbknor-jackson-jsonschema_2.12-1.0.34.jar"/>
+	<classpathentry kind="lib" path="D:/src/java_samples/openai/openai-java/example/lib/okhttp-3.14.9.jar"/>
+	<classpathentry kind="lib" path="D:/src/java_samples/openai/openai-java/example/lib/okio-1.17.2.jar"/>
+	<classpathentry kind="lib" path="D:/src/java_samples/openai/openai-java/example/lib/reactive-streams-1.0.3.jar"/>
+	<classpathentry kind="lib" path="D:/src/java_samples/openai/openai-java/example/lib/retrofit-2.9.0.jar"/>
+	<classpathentry kind="lib" path="D:/src/java_samples/openai/openai-java/example/lib/rxjava-2.0.0.jar"/>
+	<classpathentry kind="lib" path="D:/src/java_samples/openai/openai-java/example/lib/scala-library-2.12.8.jar"/>
+	<classpathentry kind="lib" path="D:/src/java_samples/openai/openai-java/example/lib/service-0.18.2.jar"/>
+	<classpathentry kind="lib" path="D:/src/java_samples/openai/openai-java/example/lib/service-0.18.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/src/java_samples/openai/openai-java/example/lib/service-0.18.2-sources.jar"/>
+	<classpathentry kind="lib" path="D:/src/java_samples/openai/openai-java/example/lib/slf4j-api-1.7.26.jar"/>
+	<classpathentry kind="lib" path="D:/src/java_samples/openai/openai-java/example/lib/validation-api-2.0.1.Final.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

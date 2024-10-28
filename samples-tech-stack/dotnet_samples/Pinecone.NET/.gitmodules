@@ -1,0 +1,3 @@
+[submodule "deps/pinecone-client"]
+	path = deps/pinecone-client
+	url = https://github.com/pinecone-io/pinecone-client

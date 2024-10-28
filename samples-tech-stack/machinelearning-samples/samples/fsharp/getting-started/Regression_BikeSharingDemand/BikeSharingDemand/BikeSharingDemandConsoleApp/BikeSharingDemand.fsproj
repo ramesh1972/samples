@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="DataStructures\DataStructures.fs" />
+    <Compile Include="..\..\..\..\common\ConsoleHelper.fs" Link="Common\ConsoleHelper.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Data\" />
+    <None Include="..\Data\hour_test.csv" Link="Data\hour_test.csv" />
+    <None Include="..\Data\hour_train.csv" Link="Data\hour_train.csv" />
+    <Compile Include="ModelScoringTester.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ML" Version="$(MicrosoftMLVersion)" />
+  </ItemGroup>
+
+  <ItemGroup />
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ML.DataView" Version="$(MicrosoftMLVersion)" />
+    <PackageReference Include="Microsoft.ML.FastTree" Version="$(MicrosoftMLVersion)" />
+  </ItemGroup>
+
+</Project>

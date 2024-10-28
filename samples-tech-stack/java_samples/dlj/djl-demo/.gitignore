@@ -1,0 +1,61 @@
+# Eclipse
+.project
+.classpath
+.settings/
+bin/
+
+# IntelliJ
+.idea
+*.ipr
+*.iml
+*.iws
+
+# NetBeans
+nbconfiguration.xml
+
+# Visual Studio Code
+.vscode
+.factorypath
+
+# OSX
+.DS_Store
+
+# Vim
+*.swp
+*.swo
+
+# patch
+*.orig
+*.rej
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+release.properties
+
+# Gradle
+.gradle
+build/
+out/
+
+__pycache__/
+
+*.gz
+*.jar
+*.zip
+*.tar
+*.pt
+*.h5
+*.params
+*.log
+model/
+dataset/
+
+stats.json
+coverage
+storybookstatic
+node/
+node_modules/
+dist/

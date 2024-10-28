@@ -1,0 +1,49 @@
+variables:
+  project:  './Src/HNSW.Net/HNSW.Net.csproj'
+  buildConfiguration: 'Release'
+
+trigger:
+- master
+
+pool:
+  vmImage: 'windows-latest'
+
+steps:
+- task: NuGetToolInstaller@0
+
+- task: UseDotNet@2
+  displayName: 'Use .NET 7.0 SDK'
+  inputs:
+    packageType: sdk
+    version: 7.x
+    includePreviewVersions: false
+    installationPath: $(Agent.ToolsDirectory)\dotnet
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'restore'
+    projects: '$(project)'
+  displayName: 'restore nuget'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
+    projects: '$(project)'
+    arguments: '-c $(buildConfiguration) /p:Version=1.0.$(build.buildId) /p:LangVersion=latest'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'pack'
+    packagesToPack: '$(project)'
+    versioningScheme: 'off'
+    configuration: '$(buildConfiguration)'
+    buildProperties: 'Version="1.0.$(build.buildId)";LangVersion="latest"'
+    nobuild: true
+
+- task: NuGetCommand@2
+  inputs:
+    command: 'push'
+    packagesToPush: '**/*.nupkg'
+    nuGetFeedType: 'external'
+    publishFeedCredentials: 'nuget-curiosity-org'
+  displayName: 'push nuget'

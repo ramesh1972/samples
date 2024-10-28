@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+  </PropertyGroup>
+  <PropertyGroup>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="all" />
+  </ItemGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{46257949-80B5-48F2-9B83-29354C339869}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Wexflow.Core</RootNamespace>
+    <AssemblyName>Wexflow.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Wexflow.Core.xml</DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\Wexflow.Core.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;D:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;D:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <DocumentationFile>bin\x86\Debug\Wexflow.Core.xml</DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\Wexflow.Core.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;D:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;D:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>bin\x86\Debug\Wexflow.Core.xml</DocumentationFile>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attribute.cs" />
+    <Compile Include="DbType.cs" />
+    <Compile Include="ExecutionGraph\Flowchart\Case.cs" />
+    <Compile Include="ExecutionGraph\Flowchart\If.cs" />
+    <Compile Include="ExecutionGraph\Flowchart\Switch.cs" />
+    <Compile Include="ExecutionGraph\Flowchart\While.cs" />
+    <Compile Include="Entity.cs" />
+    <Compile Include="FileInf.cs" />
+    <Compile Include="ExecutionGraph\Graph.cs" />
+    <Compile Include="ExecutionGraph\GraphEvent.cs" />
+    <Compile Include="Job.cs" />
+    <Compile Include="LaunchType.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="ExecutionGraph\Node.cs" />
+    <Compile Include="LogLevel.cs" />
+    <Compile Include="NetworkShareAccesser.cs" />
+    <Compile Include="Setting.cs" />
+    <Compile Include="Status.cs" />
+    <Compile Include="Tag.cs" />
+    <Compile Include="Task.cs" />
+    <Compile Include="TaskStatus.cs" />
+    <Compile Include="Variable.cs" />
+    <Compile Include="WexflowEngine.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Workflow.cs" />
+    <Compile Include="WorkflowJob.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GlobalVariables.xml" />
+    <Content Include="Wexflow.xml" />
+    <Content Include="Workflow.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="docs\README.md" />
+    <None Include="nuget-pack.bat" />
+    <None Include="Wexflow.Core.nuspec">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Workflow.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Wexflow.Core.Db.Firebird\Wexflow.Core.Db.Firebird.csproj">
+      <Project>{dde24357-edd6-4718-93b3-21af7fcb78e2}</Project>
+      <Name>Wexflow.Core.Db.Firebird</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Wexflow.Core.Db.LiteDB\Wexflow.Core.Db.LiteDB.csproj">
+      <Project>{2bbb9f04-49d7-49a7-a065-4b2c81e66307}</Project>
+      <Name>Wexflow.Core.Db.LiteDB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Wexflow.Core.Db.MariaDB\Wexflow.Core.Db.MariaDB.csproj">
+      <Project>{5bd0e054-0f10-4721-99b6-652da2472422}</Project>
+      <Name>Wexflow.Core.Db.MariaDB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Wexflow.Core.Db.MongoDB\Wexflow.Core.Db.MongoDB.csproj">
+      <Project>{18fddb89-d389-4f8f-b878-d874fef8b99e}</Project>
+      <Name>Wexflow.Core.Db.MongoDB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Wexflow.Core.Db.MySQL\Wexflow.Core.Db.MySQL.csproj">
+      <Project>{e7d38365-9ce1-45be-bdcd-c63a94921e27}</Project>
+      <Name>Wexflow.Core.Db.MySQL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Wexflow.Core.Db.Oracle\Wexflow.Core.Db.Oracle.csproj">
+      <Project>{51c99bd8-8190-4198-9216-c5acb2b56057}</Project>
+      <Name>Wexflow.Core.Db.Oracle</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Wexflow.Core.Db.PostgreSQL\Wexflow.Core.Db.PostgreSQL.csproj">
+      <Project>{f6070c45-b535-489d-99fb-86f6c9175257}</Project>
+      <Name>Wexflow.Core.Db.PostgreSQL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Wexflow.Core.Db.RavenDB\Wexflow.Core.Db.RavenDB.csproj">
+      <Project>{15a456e4-6992-4586-97aa-4f0279434de5}</Project>
+      <Name>Wexflow.Core.Db.RavenDB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Wexflow.Core.Db.SQLite\Wexflow.Core.Db.SQLite.csproj">
+      <Project>{19673281-bd4a-4587-9d7c-3472e605f426}</Project>
+      <Name>Wexflow.Core.Db.SQLite</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Wexflow.Core.Db.SQLServer\Wexflow.Core.Db.SQLServer.csproj">
+      <Project>{23a7c9d1-d796-4152-af5a-24ec6bfe90fa}</Project>
+      <Name>Wexflow.Core.Db.SQLServer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Wexflow.Core.Db\Wexflow.Core.Db.csproj">
+      <Project>{ffe105a5-1c72-4e7d-bc48-5f5902376893}</Project>
+      <Name>Wexflow.Core.Db</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="log4net">
+      <Version>2.0.17</Version>
+    </PackageReference>
+    <PackageReference Include="Quartz">
+      <Version>3.13.0</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.-->
+  <Target Name="BeforeBuild">
+    <PropertyGroup>
+      <CodeAnalysisRuleSet>
+      </CodeAnalysisRuleSet>
+    </PropertyGroup>
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>

@@ -1,0 +1,4 @@
+--extra-index-url=https://pip.repos.neuron.amazonaws.com
+transformers
+torch-neuron==1.12.1.*
+neuron-cc[tensorflow]

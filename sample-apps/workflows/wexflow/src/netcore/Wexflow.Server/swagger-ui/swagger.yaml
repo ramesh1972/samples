@@ -1,0 +1,1506 @@
+﻿openapi: 3.0.1
+info:
+  title: Swagger Wexflow
+  description: Wexflow API.
+  contact:
+    email: akram.elassas@gmail.com
+  license:
+    name: MIT
+    url: https://github.com/aelassas/wexflow/wiki/License
+  version: 8.3
+externalDocs:
+  description: Find out more about Wexflow
+  url: https://wexflow.github.io
+servers:
+- url: //localhost:8000/api/v1
+tags:
+- name: Dashboard
+  description: Operations about dashboard
+- name: Records
+  description: Operations about records
+- name: Manager
+  description: Operations about manager
+- name: Designer
+  description: Operations about designer
+- name: History
+  description: Operations about history
+- name: Users
+  description: Operations about users
+- name: Profiles
+  description: Operations about profiles
+- name: Notifications
+  description: Operations about notifications
+paths:
+  /status-count:
+    get:
+      tags:
+      - Dashboard
+      summary: Returns status count
+      responses:
+        200:
+          description: successful operation
+          content: {}
+  /entries-count-by-date:
+    get:
+      tags:
+      - Dashboard
+      summary: Returns entries count by keyword and date filter
+      parameters:
+      - name: s
+        in: query
+        description: Keyword
+        schema:
+          type: string
+      - name: from
+        in: query
+        description: From
+        schema:
+          type: number
+      - name: to
+        in: query
+        description: To
+        schema:
+          type: number
+      responses:
+        200:
+          description: successful operation
+          content: {}
+  /search-entries-by-page-order-by:
+    get:
+      tags:
+      - Dashboard
+      summary: Searches for entries
+      parameters:
+      - name: s
+        in: query
+        description: Keyword
+        schema:
+          type: string
+      - name: from
+        in: query
+        description: From
+        schema:
+          type: number
+      - name: to
+        in: query
+        description: To
+        schema:
+          type: number
+      - name: page
+        in: query
+        description: Page number
+        schema:
+          type: number
+      - name: entriesCount
+        in: query
+        description: Number of entries
+        schema:
+          type: number
+      - name: heo
+        in: query
+        description: Entry order by type (From 0 to 11)
+        schema:
+          type: number
+      responses:
+        200:
+          description: successful operation
+          content: {}
+  /entry-status-date-min:
+    get:
+      tags:
+      - Dashboard
+      summary: Returns entry min date
+      responses:
+        200:
+          description: successful operation
+          content: {}
+  /entry-status-date-max:
+    get:
+      tags:
+      - Dashboard
+      summary: Returns entry max date
+      responses:
+        200:
+          description: successful operation
+          content: {}
+  /entry-logs:
+    get:
+      tags:
+      - Dashboard
+      summary: Returns entry logs
+      parameters:
+      - name: id
+        in: query
+        description: Entry id
+        schema:
+          type: string
+      responses:
+        200:
+          description: successful operation
+          content: {}
+  /upload-version:
+    post:
+      tags:
+      - Records
+      summary: Uploads a version file
+      parameters:
+      - name: r
+        in: query
+        description: Record id
+        schema:
+          type: string
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              properties:
+                file:
+                  type: string
+                  description: The file version to upload
+                  format: binary
+      responses:
+        200:
+          description: successful operation
+          content: {}
+  /download-file:
+    get:
+      tags:
+      - Records
+      summary: Downloads a file
+      parameters:
+      - name: p
+        in: query
+        description: File path
+        schema:
+          type: string
+      responses:
+        200:
+          description: successful operation
+          content: {}
+  /delete-temp-version-file:
+    post:
+      tags:
+      - Records
+      summary: Deletes a temp version file
+      parameters:
+      - name: p
+        in: query
+        description: File path
+        schema:
+          type: string
+      responses:
+        200:
+          description: successful operation
+          content: {}
+  /delete-temp-version-files:
+    post:
+      tags:
+      - Records
+      summary: Deletes temp version files
+      requestBody:
+        description: Payload
+        content:
+          '*/*':
+            schema:
+              $ref: '#/components/schemas/record'
+        required: true
+      responses:
+        200:
+          description: successful operation
+          content: {}
+      x-codegen-request-body-name: body
+  /save-record:
+    post:
+      tags:
+      - Records
+      summary: Saves a record
+      requestBody:
+        description: Payload
+        content:
+          '*/*':
+            schema:
+              $ref: '#/components/schemas/record'
+        required: true
+      responses:
+        200:
+          description: successful operation
+          content: {}
+      x-codegen-request-body-name: body
+  /delete-records:
+    post:
+      tags:
+      - Records
+      summary: Deletes records
+      requestBody:
+        description: Record Ids
+        content:
+          '*/*':
+            schema:
+              type: array
+              items:
+                type: string
+        required: true
+      responses:
+        200:
+          description: successful operation
+          content: {}
+      x-codegen-request-body-name: body
+  /search-records:
+    get:
+      tags:
+      - Records
+      summary: Searches for records by keyword
+      parameters:
+      - name: s
+        in: query
+        description: Keyword
+        schema:
+          type: string
+      responses:
+        200:
+          description: successful operation
+          content: {}
+  /records-created-by:
+    get:
+      tags:
+      - Records
+      summary: Retrieves records created by a user
+      parameters:
+      - name: c
+        in: query
+        description: Username of the creator of the records
+        schema:
+          type: string
+      responses:
+        200:
+          description: successful operation
+          content: {}
+  /search-records-created-by-or-assigned-to:
+    get:
+      tags:
+      - Records
+      summary: Searches for records assigned to or created by a user by keyword
+      parameters:
+      - name: s
+        in: query
+        description: Keyword
+        schema:
+          type: string
+      - name: c
+        in: query
+        description: Username of the creator of the records
+        schema:
+          type: string
+      - name: a
+        in: query
+        description: username of the user assigned to a record
+        schema:
+          type: string
+      responses:
+        200:
+          description: successful operation
+          content: {}
+  /search:
+    get:
+      tags:
+      - Manager
+      summary: Search for workflows
+      parameters:
+      - name: s
+        in: query
+        description: Keyword
+        schema:
+          type: string
+      responses:
+        200:
+          description: successful operation
+          content: {}
+  /search-approval-workflows:
+    get:
+      tags:
+      - Manager
+      summary: Search for approval workflows
+      parameters:
+      - name: s
+        in: query
+        description: Keyword
+        schema:
+          type: string
+      responses:
+        200:
+          description: successful operation
+          content: {}
+  /workflow:
+    get:
+      tags:
+      - Manager
+      summary: Displays information of the first job of the workflow
+      parameters:
+      - name: w
+        in: query
+        description: Workflow id
+        schema:
+          type: number
+      responses:
+        200:
+          description: successful operation
+          content: {}
+  /job:
+    get:
+      tags:
+      - Manager
+      summary: Displays information of a job
+      parameters:
+      - name: w
+        in: query
+        description: Workflow id
+        schema:
+          type: number
+      - name: i
+        in: query
+        description: Job instance id
+        schema:
+          type: string
+      responses:
+        200:
+          description: successful operation
+          content: {}
+  /jobs:
+    get:
+      tags:
+      - Manager
+      summary: Returns jobs of a workflow
+      parameters:
+      - name: w
+        in: query
+        description: Workflow id
+        schema:
+          type: number
+      responses:
+        200:
+          description: successful operation
+          content: {}
+  /start:
+    post:
+      tags:
+      - Manager
+      summary: Starts a workflow
+      parameters:
+      - name: w
+        in: query
+        description: Workflow id
+        schema:
+          type: number
+      responses:
+        200:
+          description: successful operation
+          content: {}
+  /start-with-variables:
+    post:
+      tags:
+      - Manager
+      summary: Starts a workflow with variables
+      requestBody:
+        description: Payload
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/startWithVariables'
+        required: true
+      responses:
+        200:
+          description: successful operation
+          content: {}
+      x-codegen-request-body-name: body
+  /stop:
+    post:
+      tags:
+      - Manager
+      summary: Stops a workflow
+      parameters:
+      - name: w
+        in: query
+        description: Workflow id
+        schema:
+          type: number
+      - name: i
+        in: query
+        description: Instance id
+        schema:
+          type: string
+      responses:
+        200:
+          description: successful operation
+          content: {}
+  /suspend:
+    post:
+      tags:
+      - Manager
+      summary: Suspends a workflow
+      parameters:
+      - name: w
+        in: query
+        description: Workflow id
+        schema:
+          type: number
+      - name: i
+        in: query
+        description: Instance id
+        schema:
+          type: string
+      responses:
+        200:
+          description: successful operation
+          content: {}
+  /resume:
+    post:
+      tags:
+      - Manager
+      summary: Resumes a workflow
+      parameters:
+      - name: w
+        in: query
+        description: Workflow id
+        schema:
+          type: number
+      - name: i
+        in: query
+        description: Instance id
+        schema:
+          type: string
+      responses:
+        200:
+          description: successful operation
+          content: {}
+  /approve:
+    post:
+      tags:
+      - Manager
+      summary: Approves a workflow
+      parameters:
+      - name: w
+        in: query
+        description: Workflow id
+        schema:
+          type: number
+      - name: i
+        in: query
+        description: Instance id
+        schema:
+          type: string
+      responses:
+        200:
+          description: successful operation
+          content: {}
+  /reject:
+    post:
+      tags:
+      - Manager
+      summary: Rejects a workflow
+      parameters:
+      - name: w
+        in: query
+        description: Workflow id
+        schema:
+          type: number
+      - name: i
+        in: query
+        description: Instance id
+        schema:
+          type: string
+      responses:
+        200:
+          description: successful operation
+          content: {}
+  /tasks/{id}:
+    get:
+      tags:
+      - Designer
+      summary: Returns workflow's tasks
+      parameters:
+      - name: id
+        in: path
+        description: Workflow id
+        required: true
+        schema:
+          type: integer
+          format: int64
+      responses:
+        200:
+          description: successful operation
+          content: {}
+  /xml/{id}:
+    get:
+      tags:
+      - Designer
+      summary: Returns a workflow as XML
+      parameters:
+      - name: id
+        in: path
+        description: Workflow id
+        required: true
+        schema:
+          type: integer
+          format: int64
+      responses:
+        200:
+          description: successful operation
+          content: {}
+  /json/{id}:
+    get:
+      tags:
+      - Designer
+      summary: Returns a workflow as JSON
+      parameters:
+      - name: id
+        in: path
+        description: Workflow id
+        required: true
+        schema:
+          type: integer
+          format: int64
+      responses:
+        200:
+          description: successful operation
+          content: {}
+  /task-names:
+    get:
+      tags:
+      - Designer
+      summary: Returns task names
+      responses:
+        200:
+          description: successful operation
+          content: {}
+  /search-task-names:
+    get:
+      tags:
+      - Designer
+      summary: Searches for task names
+      parameters:
+      - name: s
+        in: query
+        description: Keyword
+        schema:
+          type: string
+      responses:
+        200:
+          description: successful operation
+          content: {}
+  /settings/{taskName}:
+    get:
+      tags:
+      - Designer
+      summary: Returns task settings
+      parameters:
+      - name: taskName
+        in: path
+        description: Task name
+        required: true
+        schema:
+          type: string
+      responses:
+        200:
+          description: successful operation
+          content: {}
+  /task-to-xml:
+    post:
+      tags:
+      - Designer
+      summary: Returns a task as XML
+      requestBody:
+        description: Payload
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/task'
+        required: true
+      responses:
+        200:
+          description: successful operation
+          content: {}
+      x-codegen-request-body-name: body
+  /is-workflow-id-valid/{id}:
+    get:
+      tags:
+      - Designer
+      summary: Checks if a workflow id is valid
+      parameters:
+      - name: id
+        in: path
+        description: Workflow id
+        required: true
+        schema:
+          type: integer
+          format: int64
+      responses:
+        200:
+          description: successful operation
+          content: {}
+  /is-cron-expression-valid:
+    get:
+      tags:
+      - Designer
+      summary: Checks if a cron expression is valid
+      parameters:
+      - name: e
+        in: query
+        description: Cron expression
+        schema:
+          type: string
+      responses:
+        200:
+          description: successful operation
+          content: {}
+  /is-period-valid/{period}:
+    get:
+      tags:
+      - Designer
+      summary: Checks if a workflow id is valid
+      parameters:
+      - name: period
+        in: path
+        description: period
+        required: true
+        schema:
+          type: string
+      responses:
+        200:
+          description: successful operation
+          content: {}
+  /is-xml-workflow-valid:
+    post:
+      tags:
+      - Designer
+      summary: Checks if the XML of a workflow is valid
+      requestBody:
+        description: XML
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/isXmlWorkflowValid'
+        required: true
+      responses:
+        200:
+          description: successful operation
+          content: {}
+      x-codegen-request-body-name: body
+  /workflow-id:
+    get:
+      tags:
+      - Designer
+      summary: Returns a new workflow id
+      responses:
+        200:
+          description: successful operation
+          content: {}
+  /save-xml:
+    post:
+      tags:
+      - Designer
+      summary: Saves a workflow from XML
+      requestBody:
+        description: Payload
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/saveXml'
+        required: true
+      responses:
+        200:
+          description: successful operation
+          content: {}
+      x-codegen-request-body-name: body
+  /save:
+    post:
+      tags:
+      - Designer
+      summary: Saves a workflow from JSON
+      requestBody:
+        description: Payload
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/workflow'
+        required: true
+      responses:
+        200:
+          description: successful operation
+          content: {}
+      x-codegen-request-body-name: body
+  /disable/{id}:
+    post:
+      tags:
+      - Designer
+      summary: Disables a workdlow
+      parameters:
+      - name: id
+        in: path
+        description: Workflow id
+        required: true
+        schema:
+          type: integer
+          format: int64
+      responses:
+        200:
+          description: successful operation
+          content: {}
+  /enable/{id}:
+    post:
+      tags:
+      - Designer
+      summary: Enables a workdlow
+      parameters:
+      - name: id
+        in: path
+        description: Workflow id
+        required: true
+        schema:
+          type: integer
+          format: int64
+      responses:
+        200:
+          description: successful operation
+          content: {}
+  /upload:
+    post:
+      tags:
+      - Designer
+      summary: Uploads a workflow from JSON or XML
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              properties:
+                file:
+                  type: string
+                  description: The file to upload
+                  format: binary
+      responses:
+        200:
+          description: successful operation
+          content: {}
+  /delete:
+    post:
+      tags:
+      - Designer
+      summary: Deletes a workflow
+      parameters:
+      - name: w
+        in: query
+        description: Workflow id
+        schema:
+          type: number
+      responses:
+        200:
+          description: successful operation
+          content: {}
+  /delete-workflows:
+    post:
+      tags:
+      - Designer
+      summary: Deletes workflows
+      requestBody:
+        description: Payload
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/deleteWorkflows'
+        required: true
+      responses:
+        200:
+          description: successful operation
+          content: {}
+      x-codegen-request-body-name: body
+  /graph/{id}:
+    get:
+      tags:
+      - Designer
+      summary: Returns the execution graph of the workflow
+      parameters:
+      - name: id
+        in: path
+        description: Workflow id
+        required: true
+        schema:
+          type: string
+      responses:
+        200:
+          description: successful operation
+          content: {}
+  /graph-xml/{id}:
+    get:
+      tags:
+      - Designer
+      summary: Returns the execution graph of the workflow as XML
+      parameters:
+      - name: id
+        in: path
+        description: Workflow id
+        required: true
+        schema:
+          type: string
+      responses:
+        200:
+          description: successful operation
+          content: {}
+  /graph-blockly/{id}:
+    get:
+      tags:
+      - Designer
+      summary: Returns the execution graph of the workflow as Blockly
+      parameters:
+      - name: id
+        in: path
+        description: Workflow id
+        required: true
+        schema:
+          type: string
+      responses:
+        200:
+          description: successful operation
+          content: {}
+  /history-entries-count-by-date:
+    get:
+      tags:
+      - History
+      summary: Returns entries count by keyword and date filter
+      parameters:
+      - name: s
+        in: query
+        description: Keyword
+        schema:
+          type: string
+      - name: from
+        in: query
+        description: From
+        schema:
+          type: number
+      - name: to
+        in: query
+        description: To
+        schema:
+          type: number
+      responses:
+        200:
+          description: successful operation
+          content: {}
+  /search-history-entries-by-page-order-by:
+    get:
+      tags:
+      - History
+      summary: Searches for entries
+      parameters:
+      - name: s
+        in: query
+        description: Keyword
+        schema:
+          type: string
+      - name: from
+        in: query
+        description: From
+        schema:
+          type: number
+      - name: to
+        in: query
+        description: To
+        schema:
+          type: number
+      - name: page
+        in: query
+        description: Page number
+        schema:
+          type: number
+      - name: entriesCount
+        in: query
+        description: Number of entries
+        schema:
+          type: number
+      - name: heo
+        in: query
+        description: Entry order by type (From 0 to 11)
+        schema:
+          type: number
+      responses:
+        200:
+          description: successful operation
+          content: {}
+  /history-entry-status-date-min:
+    get:
+      tags:
+      - History
+      summary: Returns entry min date
+      responses:
+        200:
+          description: successful operation
+          content: {}
+  /history-entry-status-date-max:
+    get:
+      tags:
+      - History
+      summary: Returns entry max date
+      responses:
+        200:
+          description: successful operation
+          content: {}
+  /history-entry-logs:
+    get:
+      tags:
+      - History
+      summary: Returns history entry logs
+      parameters:
+      - name: id
+        in: query
+        description: Entry id
+        schema:
+          type: string
+      responses:
+        200:
+          description: successful operation
+          content: {}
+  /user:
+    get:
+      tags:
+      - Users
+      summary: Returns a user from his username
+      parameters:
+      - name: username
+        in: query
+        description: Username
+        schema:
+          type: string
+      responses:
+        200:
+          description: successful operation
+          content: {}
+  /search-users:
+    get:
+      tags:
+      - Users
+      summary: Searches for users
+      parameters:
+      - name: keyword
+        in: query
+        description: Keyword
+        schema:
+          type: string
+      - name: uo
+        in: query
+        description: Order by type (0 or 1)
+        schema:
+          type: number
+      responses:
+        200:
+          description: successful operation
+          content: {}
+  /non-restricted-users:
+    get:
+      tags:
+      - Users
+      summary: Returns non restricted users
+      responses:
+        200:
+          description: successful operation
+          content: {}
+  /insert-user:
+    post:
+      tags:
+      - Users
+      summary: Inserts a user
+      parameters:
+      - name: username
+        in: query
+        description: Username
+        schema:
+          type: string
+      - name: password
+        in: query
+        description: Password
+        schema:
+          type: string
+      - name: up
+        in: query
+        description: User profile (From 0 to 2)
+        schema:
+          type: number
+      - name: email
+        in: query
+        description: Email
+        schema:
+          type: string
+      responses:
+        200:
+          description: successful operation
+          content: {}
+  /update-user:
+    post:
+      tags:
+      - Users
+      summary: Updates a user
+      parameters:
+      - name: userId
+        in: query
+        description: User id
+        schema:
+          type: string
+      - name: username
+        in: query
+        description: Username
+        schema:
+          type: string
+      - name: password
+        in: query
+        description: Password
+        schema:
+          type: string
+      - name: up
+        in: query
+        description: User profile (From 0 to 2)
+        schema:
+          type: number
+      - name: email
+        in: query
+        description: Email
+        schema:
+          type: string
+      responses:
+        200:
+          description: successful operation
+          content: {}
+  /update-username-email-user-profile:
+    post:
+      tags:
+      - Users
+      summary: Updates the username, the email and the user profile of a user
+      parameters:
+      - name: userId
+        in: query
+        description: User id
+        schema:
+          type: string
+      - name: username
+        in: query
+        description: Username
+        schema:
+          type: string
+      - name: password
+        in: query
+        description: Password
+        schema:
+          type: string
+      - name: up
+        in: query
+        description: User profile (From 0 to 2)
+        schema:
+          type: number
+      - name: email
+        in: query
+        description: Email
+        schema:
+          type: string
+      responses:
+        200:
+          description: successful operation
+          content: {}
+  /delete-user:
+    post:
+      tags:
+      - Users
+      summary: Deletes a user
+      parameters:
+      - name: username
+        in: query
+        description: Username
+        schema:
+          type: string
+      - name: password
+        in: query
+        description: Password
+        schema:
+          type: string
+      responses:
+        200:
+          description: successful operation
+          content: {}
+  /reset-password:
+    post:
+      tags:
+      - Users
+      summary: Resets a password
+      parameters:
+      - name: username
+        in: query
+        description: Username
+        schema:
+          type: string
+      responses:
+        200:
+          description: successful operation
+          content: {}
+  /search-admins:
+    get:
+      tags:
+      - Profiles
+      summary: Searches for administrators
+      parameters:
+      - name: keyword
+        in: query
+        description: Keyword
+        schema:
+          type: string
+      - name: uo
+        in: query
+        description: Order by type (0 or 1)
+        schema:
+          type: number
+      responses:
+        200:
+          description: successful operation
+          content: {}
+  /user-workflows:
+    get:
+      tags:
+      - Profiles
+      summary: Returns user workflows
+      parameters:
+      - name: u
+        in: query
+        description: User id
+        schema:
+          type: string
+      responses:
+        200:
+          description: successful operation
+          content: {}
+  /save-user-workflows:
+    post:
+      tags:
+      - Profiles
+      summary: Saves user workflow relations
+      requestBody:
+        description: Payload
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/saveUserWorkflows'
+        required: true
+      responses:
+        200:
+          description: successful operation
+          content: {}
+      x-codegen-request-body-name: body
+  /has-notifications:
+    get:
+      tags:
+      - Notifications
+      summary: Indicates whether the user has notifications or not
+      parameters:
+      - name: a
+        in: query
+        description: Username of the user assigned to the notifications
+        schema:
+          type: string
+      responses:
+        200:
+          description: successful operation
+          content: {}
+  /mark-notifications-as-read:
+    post:
+      tags:
+      - Notifications
+      summary: Marks notifications as read
+      requestBody:
+        description: Notification Ids
+        content:
+          '*/*':
+            schema:
+              type: array
+              items:
+                type: string
+        required: true
+      responses:
+        200:
+          description: successful operation
+          content: {}
+      x-codegen-request-body-name: body
+  /mark-notifications-as-unread:
+    post:
+      tags:
+      - Notifications
+      summary: Marks notifications as unread
+      requestBody:
+        description: Notification Ids
+        content:
+          '*/*':
+            schema:
+              type: array
+              items:
+                type: string
+        required: true
+      responses:
+        200:
+          description: successful operation
+          content: {}
+      x-codegen-request-body-name: body
+  /delete-notifications:
+    post:
+      tags:
+      - Notifications
+      summary: Deletes notifications
+      requestBody:
+        description: Notification Ids
+        content:
+          '*/*':
+            schema:
+              type: array
+              items:
+                type: string
+        required: true
+      responses:
+        200:
+          description: successful operation
+          content: {}
+      x-codegen-request-body-name: body
+  /search-notifications:
+    get:
+      tags:
+      - Notifications
+      summary: Searches for notifications of a user
+      parameters:
+      - name: a
+        in: query
+        description: Username of the user assigned to the notifications
+        schema:
+          type: string
+      - name: s
+        in: query
+        description: Keyword
+        schema:
+          type: string
+      responses:
+        200:
+          description: successful operation
+          content: {}
+  /notify:
+    post:
+      tags:
+      - Notifications
+      summary: Notifies a user
+      parameters:
+      - name: a
+        in: query
+        description: Username of the user assigned to the notification
+        schema:
+          type: string
+      - name: m
+        in: query
+        description: Notification message
+        schema:
+          type: string
+      responses:
+        200:
+          description: successful operation
+          content: {}
+  /notify-approvers:
+    post:
+      tags:
+      - Notifications
+      summary: Notifies the approvers
+      parameters:
+      - name: r
+        in: query
+        description: Record Id
+        schema:
+          type: string
+      - name: m
+        in: query
+        description: Notification message
+        schema:
+          type: string
+      responses:
+        200:
+          description: successful operation
+          content: {}
+components:
+  schemas:
+    variable:
+      type: object
+      properties:
+        Name:
+          type: string
+        Value:
+          type: string
+    startWithVariables:
+      type: object
+      properties:
+        WorkflowId:
+          type: integer
+          format: int64
+        Variables:
+          type: array
+          items:
+            $ref: '#/components/schemas/variable'
+    saveXml:
+      type: object
+      properties:
+        workflowId:
+          type: integer
+          format: int64
+        xml:
+          type: string
+    deleteWorkflows:
+      type: object
+      properties:
+        WorkflowsToDelete:
+          type: array
+          items:
+            type: integer
+            format: int64
+    userWorkflow:
+      type: object
+      properties:
+        UserId:
+          type: string
+        WorkflowId:
+          type: string
+    saveUserWorkflows:
+      type: object
+      properties:
+        UserId:
+          type: string
+        UserWorkflows:
+          type: array
+          items:
+            $ref: '#/components/schemas/userWorkflow'
+    attribute:
+      type: object
+      properties:
+        Name:
+          type: string
+        Value:
+          type: string
+    setting:
+      type: object
+      properties:
+        Name:
+          type: string
+        Value:
+          type: string
+        Attributes:
+          type: array
+          items:
+            $ref: '#/components/schemas/attribute'
+    task:
+      type: object
+      properties:
+        Id:
+          type: integer
+          format: int64
+        Name:
+          type: string
+        Description:
+          type: string
+        IsEnabled:
+          type: boolean
+        Settings:
+          type: array
+          items:
+            $ref: '#/components/schemas/setting'
+    localVariable:
+      type: object
+      properties:
+        Key:
+          type: string
+        Value:
+          type: string
+    workflowInfo:
+      type: object
+      properties:
+        Id:
+          type: integer
+          format: int64
+        IsApproval:
+          type: boolean
+        IsEnabled:
+          type: boolean
+        EnableParallelJobs:
+          type: boolean
+        LaunchType:
+          type: integer
+          format: int64
+        Name:
+          type: string
+        FilePath:
+          type: string
+        Description:
+          type: string
+        Period:
+          type: string
+        CronExpression:
+          type: string
+        LocalVariables:
+          type: array
+          items:
+            $ref: '#/components/schemas/localVariable'
+    workflow:
+      type: object
+      properties:
+        WorkflowInfo:
+          $ref: '#/components/schemas/workflowInfo'
+        Tasks:
+          type: array
+          items:
+            $ref: '#/components/schemas/task'
+    isXmlWorkflowValid:
+      type: object
+      properties:
+        xml:
+          type: string
+    version:
+      type: object
+      properties:
+        Id:
+          type: string
+        FilePath:
+          type: string
+        FileName:
+          type: string
+        RecordId:
+          type: string
+        CreatedOn:
+          type: string
+    record:
+      type: object
+      properties:
+        Id:
+          type: string
+        Name:
+          type: string
+        Description:
+          type: string
+        StartDate:
+          type: string
+        EndDate:
+          type: string
+        Comments:
+          type: string
+        Approved:
+          type: boolean
+        ManagerComments:
+          type: string
+        ModifiedBy:
+          type: string
+        ModifiedOn:
+          type: string
+        CreatedBy:
+          type: string
+        CreatedOn:
+          type: string
+        AssignedTo:
+          type: string
+        AssignedOn:
+          type: string
+        Versions:
+          type: array
+          items:
+            $ref: '#/components/schemas/version'

@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/21dad5d6-6992-4dc1-9b43-7419e85191b4/resourceGroups/rameshv_resource_group/providers/Microsoft.Web/sites/deploy-react-sample",
+    "appService.deploySubpath": "."
+}

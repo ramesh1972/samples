@@ -1,0 +1,48 @@
+{
+  "name": "<%= params.extensionName %>",
+  "keywords": [
+    "theia-extension"
+  ],
+  "version": "<%= params.version %>",<% 
+  if (params.description) { %>
+  "description": "<%= params.description %>",
+  <%} %><% 
+  if (params.author) { %>
+  "author": "<%= params.author %>",
+  <% } %><% 
+  if (params.license) { %>
+  "license": "<%= params.license %>",
+  <% } %><% 
+  if (params.githubURL) { %>
+  "repository": {
+    "type": "git",
+    "url": "<%= params.githubURL %>.git"
+  },
+  "bugs": {
+    "url": "<%= params.githubURL %>/issues"
+  },
+  "homepage": "<%= params.githubURL %>",<% } %>
+  "files": [
+    "lib",
+    "src"
+  ],
+  "dependencies": {
+    "@theia/core": "<%= params.theiaVersion %>"<% if (params.dependencies) { %><%- params.dependencies %><% } %>
+  },
+  "devDependencies": {
+    "rimraf": "latest",
+    "typescript": "~4.5.5"<% if (params.devdependencies) { %><%- params.devdependencies %><% } %>
+  },
+  "scripts": {
+    "prepare": "yarn run clean && yarn run build",
+    "clean": "rimraf lib",
+    "build": "tsc",
+    "watch": "tsc -w"<% if (params.scripts) { %><%- params.scripts %><% } %>
+  },
+  "theiaExtensions": [
+    {
+      "frontend": "lib/browser/<%= params.extensionPath %>-frontend-module"<% if (params.backend) { %>,
+      "backend": "lib/node/<%= params.extensionPath %>-backend-module"<% } %>
+    }
+  ]
+}

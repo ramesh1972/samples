@@ -1,0 +1,161 @@
+﻿#profiles {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#users-search {
+    margin-bottom: 10px;
+}
+
+#users-search #users-search-action {
+    margin-left: 5px;
+    width: 75px;
+}
+
+#users-search #users-search-text {
+    margin-left: 10px;
+    width: 250px;
+}
+
+#users-container {
+    position: absolute;
+    top: 10px;
+    bottom: 0;
+    left: 0;
+    width: 360px;
+}
+
+#users-table {
+    position: absolute;
+    top: 38px;
+    left: 10px;
+    bottom: 0;
+    width: 340px;
+    overflow: hidden;
+}
+
+/* users table */
+
+#users-table #wf-users-table {
+    display: block;
+    table-layout: fixed;
+    margin: 0;
+}
+
+#users-table #wf-users-table thead, tbody {
+    display: block;
+}
+
+#users-table #wf-users-table tbody {
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+#users-table #wf-users-table .thead-dark {
+    background: #272727;
+    color: #EEEEEE;
+}
+
+#users-table #wf-users-table tbody tr:hover {
+    background: #EEEEEE;
+}
+
+#users-table #wf-users-table tbody tr:hover {
+    cursor: pointer;
+}
+
+#users-table #wf-users-table .selected, #users-table #wf-users-table .selected:hover {
+    background-color: #ffb347;
+}
+
+#users-table #wf-users-table #th-username {
+    cursor: pointer;
+}
+
+#users-table #wf-users-table #th-id, #users-table #wf-users-table .userid {
+    display: none;
+}
+
+#right-panel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 360px;
+}
+
+#users-save-action {
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 1px 15px;
+    display: none;
+}
+
+#workflows {
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    right: 10px;
+    left: 10px;
+    overflow: hidden;
+}
+
+/* workflows table */
+
+#workflows #wf-workflows-table {
+    display: block;
+    table-layout: fixed;
+    margin: 0;
+    width: 100%;
+}
+
+#workflows #wf-workflows-table thead, tbody {
+    display: block;
+}
+
+#workflows #wf-workflows-table tbody {
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+#workflows #wf-workflows-table .thead-dark {
+    background: #272727;
+    color: #EEEEEE;
+}
+
+#workflows #wf-workflows-table tbody tr:hover {
+    background: #EEEEEE;
+}
+
+#workflows #wf-workflows-table .wf-id {
+    width: 45px;
+}
+
+#workflows #wf-workflows-table .wf-n {
+    width: 200px;
+}
+
+#workflows #wf-workflows-table .wf-lt {
+    width: 100px;
+}
+
+#workflows #wf-workflows-table .wf-e {
+    width: 75px;
+}
+
+#workflows #wf-workflows-table .wf-a {
+    width: 75px;
+}
+
+#workflows #wf-workflows-table tbody tr:hover {
+    cursor: pointer;
+}
+
+#workflows #wf-workflows-table .selected, #workflows #wf-workflows-table .selected:hover {
+    background-color: #ffb347;
+}

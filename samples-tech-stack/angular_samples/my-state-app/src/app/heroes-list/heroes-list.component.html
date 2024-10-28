@@ -1,0 +1,17 @@
+<p>heroes-list works!</p>
+<ul>
+    <li *ngFor="let hero of heroesList">
+        {{ hero.name }}
+    </li>
+</ul>
+
+<br/>
+
+<input [(ngModel)]="newHero" placeholder="Enter new hero">
+<button (click)="addHero()">Add Hero</button>
+
+<ul>
+    <li *ngFor="let hero of heroesList">
+        {{ hero.name }}
+    </li>
+</ul>
